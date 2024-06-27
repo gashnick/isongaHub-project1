@@ -26,7 +26,7 @@ header {
 }
 .links h3 {
   margin: 15px;
-  color: rgb(80, 85, 85);
+  color: rgb(186, 198, 198);
   line-height: 18px;
 }
 .links h3:hover {
@@ -75,12 +75,14 @@ h2 {
   font-size: 62px;
   line-height: 75px;
   letter-spacing: -0.04em;
+  color: white;
 }
 .section__header-content p {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   margin-top: 1.5rem;
+  color: white;
 }
 .section__header-content__input {
   position: relative;
@@ -88,40 +90,33 @@ h2 {
   margin: 2rem 0 1rem;
   display: flex;
 }
-.section__header-content__input input {
-  flex: 2;
-  width: 100%;
-  min-height: 50px;
-  background: white;
-  border-radius: 50px;
-  font-size: 20px;
-  line-height: 2px;
-  padding: 0 1rem;
-  outline: none;
-  border: 2px solid white;
-  color: black;
-  box-sizing: border-box;
+form {
+  position: relative;
+  width: 700px;
 }
-.section__header-content__input button {
-  position: absolute;
-  right: 3px;
-  top: 10%;
-  transform: translate(-50%);
-  background: rgb(69, 69, 199);
-  font-weight: bold;
-  line-height: 10px;
-  font-size: 20px;
-  color: white;
+form input {
+  width: 100%;
+  padding: 15px;
   border-radius: 50px;
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  padding: 0 15px;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
+  outline: none;
+}
+form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-right: 5px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 20%;
+  margin: 0.5rem;
+  background: rgb(69, 69, 199);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 .header__image {
   flex: 1;
@@ -182,7 +177,7 @@ h2 {
 }
 .features__contents p {
   font-style: normal;
-  font-weight: -100;
+  font-weight: 100;
   font-size: 20px;
   margin-top: 1.5rem;
 }
@@ -192,6 +187,7 @@ h2 {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+  color: black;
 }
 .icon {
   display: inline-block;
@@ -226,8 +222,8 @@ h2 {
   height: 50%;
 }
 .testimonials {
-  display: flex;
-  background: rgba(244, 241, 241, 0.724);
+  background: rgb(214, 205, 205);
+  padding: 2rem;
 }
 .testimonials__content {
   flex: 1;
@@ -235,7 +231,6 @@ h2 {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin: 2rem;
 }
 .testimonials__content h1 {
   line-height: 18px;
@@ -251,6 +246,120 @@ h2 {
   text-align: center;
   padding: 1rem;
   font-size: 15px;
+  margin-bottom: 1.5rem;
+}
+.testimonials__content h2 {
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.testimonials__content p {
+  font-weight: normal;
+  line-height: 27px;
+  margin-top: 1.5rem;
+}
+.testimonials__container {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  outline: none;
+  border-radius: 10px;
+}
+.testimonials__people,
+.brand {
+  margin-bottom: 20px; /* add some spacing between sections */
+}
+.testimonials__people {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.testimonials__people > div {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+.testimonials__people h2 {
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+.testimonials__people p {
+  font-size: 20px;
+  letter-spacing: -0.02rem;
+  font-weight: 400;
+}
+hr {
+  margin-top: 2rem;
+}
+
+.faqs {
+  margin: 2rem;
+}
+.faqs__contents {
+  text-align: center;
+}
+.h3_centered {
+  margin-bottom: 1.5rem;
+  background-color: aqua;
+  text-align: center;
+  padding: 10px;
+}
+.faqs__contents h1 {
+  margin-bottom: 1rem;
+}
+.faqs__container {
+  margin-top: 1.5rem;
+}
+
+.faqs__container h2 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+
+.faqs__container .arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.faqs__container .arrow.down {
+  transform: rotate(45deg);
+}
+.faqs__container .arrow.up {
+  transform: rotate(-135deg);
+}
+.faqs__container p {
+  display: none;
+  margin-top: 10px;
+  color: black;
+}
+.faqs__conains {
+  width: 100%;
+  background-color: aquamarine;
+  border-radius: 10px;
+  margin-top: 3rem;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+.faqs__conains form {
+  margin: auto;
+  width: 50%;
+}
+.faqs__conains p {
+  margin-top: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 1050px) {
   .section__header {
