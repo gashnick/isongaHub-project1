@@ -48,13 +48,13 @@ header {
   color: white;
 }
 .flex a:hover {
-  background-color: azure;
+  background-color: #ccc;
   text-align: center;
   cursor: pointer;
   width: 10%;
   padding: 5px;
   border-radius: 5px;
-  color: black;
+  color: white;
 }
 h2 {
   font-weight: bold;
@@ -82,10 +82,10 @@ h2 {
 }
 .section__header-content p {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 200;
   font-size: 20px;
   margin-top: 1.5rem;
-  color: white;
+  color: #ccc;
 }
 .section__header-content__input {
   position: relative;
@@ -180,9 +180,9 @@ form button {
 }
 .features__contents p {
   font-style: normal;
-  font-weight: 100;
   font-size: 20px;
   margin-top: 1.5rem;
+  color: #ccc;
 }
 .features__contents h2 {
   text-transform: capitalize;
@@ -279,22 +279,30 @@ form button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
+  padding: 20px;
 }
 .testimonials__people > div {
-  flex: 1;
-  margin: 0 10px;
+  max-width: 200px;
   text-align: center;
 }
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 .testimonials__people h2 {
-  font-weight: 700;
-  line-height: 20px;
+  margin: 10px 0;
+  font-size: 18px;
   color: black;
-  margin-bottom: 1.5rem;
 }
 .testimonials__people p {
   font-size: 20px;
   letter-spacing: -0.02rem;
   font-weight: 400;
+  color: #ccc;
 }
 hr {
   margin-top: 2rem;
@@ -348,7 +356,7 @@ hr {
 .faqs__container p {
   display: none;
   margin-top: 10px;
-  color: black;
+  font-weight: 700;
 }
 .faqs__conains {
   width: 100%;
@@ -391,16 +399,20 @@ hr {
 }
 .footer__links a {
   text-decoration: none;
-  color: black;
+  color: #ccc;
   margin-top: 1rem;
+  font-weight: 400;
 }
 .footer_contains {
   margin: 2rem;
 }
 .footer_contains p {
   margin-top: 1rem;
-  flex-wrap: wrap;
+  color: #ccc;
   font-size: 12px;
+}
+.footer_contains strong {
+  color: black;
 }
 .footer__foot {
   display: flex;
@@ -410,6 +422,7 @@ hr {
 }
 .footer__foot p {
   margin: 0;
+  color: #ccc;
 }
 .social_icons {
   list-style: none;
