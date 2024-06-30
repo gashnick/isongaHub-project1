@@ -18,6 +18,7 @@ header {
   max-width: 1152px;
   padding: 6px;
 }
+
 .links {
   align-items: center;
   display: flex;
@@ -33,25 +34,26 @@ header {
   color: white;
   cursor: pointer;
 }
-ul {
+.flex ul {
   list-style-type: none;
   display: flex;
   gap: 4;
 }
-ul li a {
+.flex ul li a {
   text-decoration: none;
   margin: 10px;
   font-weight: bold;
   font-size: 18px;
   color: white;
 }
-ul li a:hover {
-  border-radius: 10px;
-  background: hsl(180, 12%, 92%);
-  width: 90px;
-  padding: 20px;
+.flex a:hover {
+  background-color: azure;
   text-align: center;
   cursor: pointer;
+  width: 10%;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
 }
 h2 {
   font-weight: bold;
@@ -236,7 +238,6 @@ form button {
   line-height: 18px;
   font-weight: 800;
   font-size: 20px;
-  letter-spacing: -0.02rem;
   margin-top: 2rem;
 }
 .testimonials__content h3 {
@@ -251,7 +252,8 @@ form button {
 .testimonials__content h2 {
   line-height: 20px;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  color: black;
 }
 .testimonials__content p {
   font-weight: normal;
@@ -304,13 +306,17 @@ hr {
   text-align: center;
 }
 .h3_centered {
-  margin-bottom: 1.5rem;
-  background-color: aqua;
+  background: aqua;
   text-align: center;
+  width: 10%;
   padding: 10px;
+  align-items: center;
+  margin: auto;
+  border-radius: 5px;
 }
 .faqs__contents h1 {
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 .faqs__container {
   margin-top: 1.5rem;
@@ -361,6 +367,70 @@ hr {
   font-weight: 100;
   margin-bottom: 1.5rem;
 }
+.footer__contents {
+  display: flex;
+}
+.footer__links {
+  padding: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.footer__links h3 {
+  margin-left: 6rem;
+}
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-left: 6rem;
+}
+.footer__links li {
+  margin: 1rem;
+}
+.footer__links a {
+  text-decoration: none;
+  color: black;
+  margin-top: 1rem;
+}
+.footer_contains {
+  margin: 2rem;
+}
+.footer_contains p {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.footer__foot {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__foot p {
+  margin: 0;
+}
+.social_icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+.social_icons li {
+  background-color: blue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.social_icons li span {
+  color: white;
+  font-size: 16px;
+}
+
 @media screen and (max-width: 1050px) {
   .section__header {
     flex-direction: column;

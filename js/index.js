@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document
-    .querySelector(".faqs__container h2")
-    .addEventListener("click", function () {
+  document.querySelectorAll(".faqs__container h2").forEach(function (header) {
+    header.addEventListener("click", function () {
       const p = this.nextElementSibling.nextElementSibling;
       const arrow = this.querySelector(".arrow");
 
@@ -13,4 +12,5 @@ document.addEventListener("DOMContentLoaded", function () {
         arrow.style.transform = "rotate(45deg)";
       }
     });
+  });
 });
