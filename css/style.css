@@ -284,6 +284,9 @@ form button {
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.testimonials__people span > img {
+  width: 50%;
+}
 .testimonials__people > div {
   text-align: center;
 }
