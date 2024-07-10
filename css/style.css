@@ -9,7 +9,8 @@ body {
   margin: 0;
 }
 header {
-  background: rgb(11, 16, 63);
+  background: #0b103f;
+  padding-top: 20px;
 }
 .flex {
   display: flex;
@@ -17,7 +18,7 @@ header {
   align-items: center;
   margin: auto;
   max-width: 1152px;
-  padding: 6px;
+  padding: 10px;
 }
 
 .links {
@@ -75,15 +76,15 @@ h2 {
 }
 .section__header-content h1 {
   font-weight: 800;
-  font-size: 62px;
-  line-height: 75px;
+  font-size: 40px;
+  line-height: 60px;
   letter-spacing: -0.04em;
   color: white;
 }
 .section__header-content p {
   font-style: normal;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 1.5rem;
   color: #ccc;
 }
@@ -128,8 +129,7 @@ form button {
   align-items: center;
 }
 .header__image img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
 }
 
 .brand {
@@ -225,8 +225,8 @@ form button {
   height: 50%;
 }
 .testimonials {
-  background: rgb(214, 205, 205);
-  padding: 2rem;
+  background: rgb(237, 234, 234);
+  padding: 3rem;
 }
 .testimonials__content {
   flex: 1;
@@ -243,7 +243,7 @@ form button {
 }
 .testimonials__content h3 {
   line-height: 20px;
-  background: rgb(28, 233, 141);
+  background: rgb(177, 245, 214);
   border-radius: 5px;
   text-align: center;
   padding: 1rem;
@@ -262,6 +262,7 @@ form button {
   margin-top: 1.5rem;
 }
 .testimonials__container {
+  display: grid;
   width: 100%;
   margin-top: 1.5rem;
   padding: 20px;
@@ -276,11 +277,12 @@ form button {
   margin-bottom: 20px; /* add some spacing between sections */
 }
 .testimonials__people {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 20px;
+  display: grid;
+  padding-block: 2rem;
+  margin-inline: auto;
+  width: min(95%, 70rem);
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .testimonials__people > div {
   max-width: 200px;
@@ -306,6 +308,7 @@ form button {
 }
 hr {
   margin-top: 2rem;
+  color: #ccc;
 }
 
 .faqs {
