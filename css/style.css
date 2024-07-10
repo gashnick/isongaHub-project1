@@ -285,7 +285,6 @@ form button {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .testimonials__people > div {
-  max-width: 200px;
   text-align: center;
 }
 .testimonial-img {
