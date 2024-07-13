@@ -12,50 +12,31 @@ header {
   background: #0b103f;
   padding-top: 20px;
 }
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  max-width: 1152px;
-  padding: 10px;
+nav {
+  display: grid;
+  padding-block: 2rem;
+  margin-inline: auto;
+  width: min(95%, 70rem);
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-
-.links {
-  align-items: center;
-  display: flex;
-  padding: 3px;
-  margin: auto;
-}
-.links h3 {
-  margin: 15px;
-  color: rgb(186, 198, 198);
-  line-height: 18px;
-}
-.links h3:hover {
-  color: white;
-  cursor: pointer;
-}
-.flex ul {
+nav ul {
   list-style-type: none;
   display: flex;
-  gap: 4;
+  gap: 1.5rem;
 }
-.flex ul li a {
+nav ul li a {
+  color: white;
   text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
 }
-.flex a:hover {
+.links {
+  margin-inline: auto;
+}
+
+.links a:hover {
   background-color: #ccc;
-  text-align: center;
-  cursor: pointer;
-  width: 10%;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
+  border-radius: 1rem;
+  border: 1px;
 }
 h2 {
   font-weight: bold;
@@ -71,7 +52,7 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 2rem;
+  margin: 4.5rem;
   text-transform: capitalize;
 }
 .section__header-content h1 {
@@ -160,7 +141,7 @@ form button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin: 2rem;
+  margin: 4.5rem;
   text-transform: capitalize;
 }
 .features__contents h3 {
@@ -274,7 +255,7 @@ form button {
 }
 .testimonials__people,
 .brand {
-  margin-bottom: 20px; /* add some spacing between sections */
+  margin-bottom: 20px;
 }
 .testimonials__people {
   display: grid;
@@ -286,6 +267,10 @@ form button {
 }
 .testimonials__people span > img {
   width: 50%;
+}
+.image__scroll {
+  text-align: center;
+  align-items: center;
 }
 .testimonials__people > div {
   text-align: center;
@@ -471,5 +456,10 @@ hr {
   .section__header-content__input button {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media screen and (max-width: 490px) {
+  h2 {
+    font-size: 16px;
   }
 }
