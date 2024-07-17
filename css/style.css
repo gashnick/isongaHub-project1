@@ -206,7 +206,7 @@ form button {
   height: 50%;
 }
 .testimonials {
-  background: rgb(237, 234, 234);
+  background: rgb(241, 237, 237);
   padding: 3rem;
 }
 .testimonials__content {
@@ -215,6 +215,7 @@ form button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  margin-inline: 1.5rem;
 }
 .testimonials__content h1 {
   line-height: 18px;
@@ -240,12 +241,11 @@ form button {
 .testimonials__content p {
   font-weight: normal;
   line-height: 27px;
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .testimonials__container {
-  display: grid;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-inline: 1.5rem;
   padding: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
